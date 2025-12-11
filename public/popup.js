@@ -386,8 +386,10 @@
       form.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        const btn = document.getElementById('exitBtn');
-        const email = document.getElementById('exitEmail').value;
+       const btn = document.getElementById('exitBtn');
+       const firstName = document.getElementById('exitFirstName').value;
+       const lastName = document.getElementById('exitLastName').value;
+       const email = document.getElementById('exitEmail').value;
         
         btn.disabled = true;
         btn.textContent = 'Sending...';
@@ -395,9 +397,11 @@
         try {
           const res = await fetch(WEBHOOK_URL, {
             method: 'POST',
-            body: JSON.stringify({
-              email: email,
-              source: 'Exit Intent Popup - Multi-Guide Bundle',
+           body: JSON.stringify({
+  firstName: firstName,
+  lastName: lastName,
+  email: email,
+  source: 'Exit Intent Popup - Multi-Guide Bundle',
               timestamp: new Date().toISOString(),
               tags: ['Exit Intent Lead', 'Multi-Guide Bundle', 'Website Lead']
             })
