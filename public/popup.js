@@ -395,9 +395,6 @@
         try {
           const res = await fetch(WEBHOOK_URL, {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
             body: JSON.stringify({
               email: email,
               source: 'Exit Intent Popup - Multi-Guide Bundle',
