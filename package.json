@@ -1,0 +1,13 @@
+{
+  "name": "exit-popup-universal",
+  "version": "1.0.0",
+  "description": "Universal exit-intent popup for real estate lead capture",
+  "main": "popup.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build needed - static files'"
+  },
+  "keywords": ["exit-intent", "popup", "lead-capture", "real-estate"],
+  "author": "EJ - Corridor Homes",
+  "license": "MIT"
+}
