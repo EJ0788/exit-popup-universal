@@ -311,11 +311,11 @@
             </div>
           </div>
           
-          <form id="exitForm" class="exit-form">
-            <input type="email" id="exitEmail" placeholder="Enter your email" required class="exit-input">
-            <button type="submit" id="exitBtn" class="exit-btn">Send Me All 3 Guides</button>
-            <p class="exit-disclaimer">No spam. Unsubscribe anytime.</p>
-          </form>
+         <form id="exitForm" class="exit-form">
+  <input type="text" id="exitFirstName" placeholder="First name" required class="exit-input">
+  <input type="text" id="exitLastName" placeholder="Last name" required class="exit-input">
+  <input type="email" id="exitEmail" placeholder="Email address" required class="exit-input">
+  <button type="submit" id="exitBtn" class="exit-btn">Send Me All 3 Guides</button>
           
           <div id="exitSuccess" class="exit-success">
             <h3>✓ Success!</h3>
